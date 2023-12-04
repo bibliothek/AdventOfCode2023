@@ -23,4 +23,4 @@ type Day4Test() =
     [<Fact>]
     let ``Day 4 part 2`` () =
         let solution = Day4.solver2 demoData
-        Assert.Equal("", solution)
+        Assert.Equal(30, solution)
