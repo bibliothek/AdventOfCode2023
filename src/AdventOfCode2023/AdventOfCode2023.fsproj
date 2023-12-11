@@ -14,7 +14,11 @@
     <Compile Include="Solver\Day7.fs" />
     <Compile Include="Solver\Day8.fs" />
     <Compile Include="Solver\Day9.fs" />
+    <Compile Include="Solver\Day10.fs" />
     <Compile Include="Program.fs" />
     <Content Include="Properties\launchSettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdventOfCodeHelpers\AdventOfCodeHelpers.fsproj" />
   </ItemGroup>
 </Project>

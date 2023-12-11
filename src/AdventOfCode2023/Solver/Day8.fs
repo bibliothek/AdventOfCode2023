@@ -1,6 +1,7 @@
 module AdventOfCode2023.Solver.Day8
 
 open System.Collections.Generic
+open AdventOfCodeHelpers.MathHelper
 
 type Node =
     { id: string
@@ -35,14 +36,6 @@ let rec findDistance (map: MyMap) (instructions: string) (node: Node) (count: in
 let solver1 (lines: string array) =
     let map = getMap (lines |> Array.skip 2)
     findDistance map lines[0] map["AAA"] 0 (fun x -> x = "ZZZ")
-
-let rec gcd a b =
-    match (a, b) with
-    | (x, y) when x = y -> x
-    | (x, y) when x > y -> gcd (x - y) y
-    | (x, y) -> gcd x (y - x)
-
-let lcm a b = a * b / (gcd a b)
 
 let solver2 (lines: string array) =
     let map = getMap (lines |> Array.skip 2)
