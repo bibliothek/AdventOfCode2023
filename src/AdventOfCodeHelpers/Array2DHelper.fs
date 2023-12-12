@@ -15,6 +15,12 @@ type Pos =
         y: int
     }
 
+type Pos64 =
+    {
+        x: int64
+        y: int64
+    }
+
 let buildFromLinesAsInt (lines: string array) =
     Array2D.init lines.[0].Length lines.Length (fun x y -> Char.GetNumericValue lines.[y].[x] |> int)
 
