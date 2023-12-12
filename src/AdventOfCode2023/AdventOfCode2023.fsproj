@@ -15,6 +15,7 @@
     <Compile Include="Solver\Day8.fs" />
     <Compile Include="Solver\Day9.fs" />
     <Compile Include="Solver\Day10.fs" />
+    <Compile Include="Solver\Day11.fs" />
     <Compile Include="Program.fs" />
     <Content Include="Properties\launchSettings.json" />
   </ItemGroup>

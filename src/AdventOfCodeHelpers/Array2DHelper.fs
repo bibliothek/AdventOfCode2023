@@ -34,6 +34,13 @@ let toSeqi<'A> (array: 'A[,]) =
                 yield ((x,y),array.[x, y])
     }
 
+let toSeqWithPoint<'A> (array: 'A[,]) =
+    seq {
+        for x in 0 .. Array2D.length1 array - 1 do
+            for y in 0 .. Array2D.length2 array - 1 do
+                yield ({x = x; y = y},array.[x, y])
+    }
+
 let getPrintableOverview map =
     let sb = StringBuilder()
 
